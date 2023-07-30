@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppSencillaMAUI.Vistas.PgInicio"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Inicio"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,auto" RowSpacing="16">
+        <VerticalStackLayout
+            Grid.Row="0"
+            Margin="16"
+            Spacing="16">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                Text="Inicio" />
+            <Line BackgroundColor="Black" />
+            <Frame>
+                <Label FontSize="Subtitle" Text="Hola mundo, en MAUI." />
+            </Frame>
+        </VerticalStackLayout>
+        <Button
+            Grid.Row="1"
+            Margin="16"
+            Text="Ver mensaje" />
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,2 @@
+# AppSencillaMAUI
+Para mini-curso

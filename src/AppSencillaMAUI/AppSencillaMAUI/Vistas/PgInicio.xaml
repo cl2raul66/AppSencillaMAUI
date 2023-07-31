@@ -3,7 +3,9 @@
     x:Class="AppSencillaMAUI.Vistas.PgInicio"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:AppSencillaMAUI.VistaModelos"
     Title="Inicio"
+    x:DataType="vm:PgInicioVistaModelo"
     Shell.NavBarIsVisible="False">
 
     <Grid RowDefinitions="*,auto" RowSpacing="16">
@@ -15,7 +17,7 @@
                 FontAttributes="Bold"
                 FontSize="Subtitle"
                 Text="Inicio" />
-            <Line BackgroundColor="Black" />
+            <Line BackgroundColor="{StaticResource Tertiary}" />
             <Frame>
                 <Label FontSize="Subtitle" Text="Hola mundo, en MAUI." />
             </Frame>
@@ -23,6 +25,7 @@
         <Button
             Grid.Row="1"
             Margin="16"
+            Command="{Binding VerMensajeCommand}"
             Text="Ver mensaje" />
     </Grid>
 

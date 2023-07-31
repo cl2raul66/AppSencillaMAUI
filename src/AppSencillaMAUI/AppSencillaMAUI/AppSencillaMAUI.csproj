@@ -81,11 +81,13 @@
 
 	<ItemGroup>
 	  <Folder Include="Modelos\" />
-	  <Folder Include="VistaModelos\" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Vistas\PgInicio.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Vistas\PgMensaje.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
